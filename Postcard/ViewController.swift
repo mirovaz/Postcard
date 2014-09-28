@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
-        
+// voltando ao estado inicial do botão de envio
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
     }
 

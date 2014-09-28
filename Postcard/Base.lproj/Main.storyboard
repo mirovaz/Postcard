@@ -32,7 +32,7 @@
                                     <rect key="frame" x="16" y="324" width="310" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWF-n4-8oo">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label_msg" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWF-n4-8oo">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -62,6 +62,15 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Bj-ZE-Mrv"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label_name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-uq-sME">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="170" width="174" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -71,6 +80,7 @@
                                 <exclude reference="cWF-n4-8oo"/>
                                 <exclude reference="waK-gu-MwY"/>
                                 <exclude reference="yEQ-IC-95I"/>
+                                <exclude reference="2qf-uq-sME"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -80,6 +90,7 @@
                                 <include reference="cWF-n4-8oo"/>
                                 <include reference="waK-gu-MwY"/>
                                 <include reference="yEQ-IC-95I"/>
+                                <include reference="2qf-uq-sME"/>
                             </mask>
                         </variation>
                     </view>
@@ -90,6 +101,7 @@
                         <outlet property="enterNameTextField" destination="NBV-gp-5YB" id="aIg-uJ-3vE"/>
                         <outlet property="mailButton" destination="yEQ-IC-95I" id="IMU-E7-AJU"/>
                         <outlet property="messageLabel" destination="cWF-n4-8oo" id="ocg-Sr-blB"/>
+                        <outlet property="nameLabel" destination="2qf-uq-sME" id="ZWj-1K-8aW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
